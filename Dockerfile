@@ -6,7 +6,7 @@ RUN mkdir /app
 RUN chown 1001 /app
 ARG BRANCH_NAME
 USER 1001
-RUN cd /app; git clone -b ${BRANCH_NAME} https://github.optum.com/OptumRxAutomation/DockerPythonTest.git
+RUN cd /app; git clone https://github.com/kshitijb90/DockerTest
 WORKDIR /app/DockerPythonTest
 RUN cd /app/DockerPythonTest
 RUN ls
