@@ -16,5 +16,5 @@ EXPOSE 5000
 #ENTRYPOINT ["python", "FMtest.py"]
 ENTRYPOINT ["python"]
 #CMD ["FMtest.py", "param1", "param2"]
-CMD ["FMtest.py", "param1"]
+CMD ["/app/DockerPythonTest/FMtest.py", "param1"]
 #CMD ["python","-m","test","run","--host=0.0.0.0"]
