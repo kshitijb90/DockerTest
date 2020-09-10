@@ -9,6 +9,7 @@ USER 1001
 RUN cd /app; git clone https://github.com/kshitijb90/DockerTest.git
 WORKDIR /app/DockerTest
 RUN cd /app/DockerTest
+COPY KB/T1.txt /app/DockerTest
 RUN ls
 #ENV FM_APP=FMtest.py
 #ENV FM_ENV=development
